@@ -1,0 +1,22 @@
+README
+## 概要
+Doc2Vecのエクササイズをしてみただけのプログラム
+コメント(文章)に似たコメントを表示
+
+## 実装
+### 関数
+ * read_csv(input_file)
+	 * input:csvファイル
+	 * output:[[時刻, コメント]]リスト
+ * write_csv(output_file)
+	 * input:[[時刻, コメント]]リスト
+	 * output:csvファイル
+ * repl
+	 * 内部処理
+		 * read:標準入力から読み込み, リストに追加
+		 * eval:Doc2Vecを利用
+		 * print:入力したデータに似た情報の表示
+		 * loop:readへ戻る
+
+### 大域変数
+ * DATA: 時刻とコメントの２つ組み のリスト
